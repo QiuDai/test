@@ -1,0 +1,43 @@
+p {
+  text-indent: 2em;
+}
+h4 {
+  border-bottom: 3px groove #226945a9;
+  width: 70px;
+  padding-left: 10px;
+}
+
+div#songsmain {
+  line-height: 2.5;
+}
+div#shuming {
+  float: right;
+  font-size: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.biaoti {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.kuai {
+  /* margin-top: 50px;  */ 
+  -moz-box-shadow: 3px 3px 20px#3c5c4ca9;
+  -webkit-box-shadow: 3px 3px 20px #3c5c4ca9;
+  box-shadow: 3px 3px 20px #3c5c4ca9;  
+  border-radius: 5px; 
+}
+.citou {
+  background-image: url("../images/beijing1.jpg");
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border: #226945a9;
+}
+.geci {
+  text-align: center;
+}
+.cidi {
+  background-image: url("../images/beijing4.gif");
+  padding: 30px;
+}

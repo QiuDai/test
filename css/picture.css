@@ -1,0 +1,40 @@
+h1{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+
+
+
+.daoyu{
+  width: 1000px;
+  font-family:  KaiTi;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  text-indent:0.5em;
+}
+.items {
+  width: 400px;
+  margin: 0 20px 20px 0;
+  overflow: hidden;
+  padding: 10px 10px 0;
+  border: 50px solid rgb(158, 150, 97);
+  box-shadow: 8px 8px 12px 12px rgba(0, 31, 24, 0.836);
+}
+.lazy {
+  display: block;
+  width: 500px;
+  height: 510px;  
+}
+.wenjian {
+  width: 1.5em;
+  float: right;
+  line-height: 1.5em;
+  margin: 20px;
+  font-size: 20px;
+  font-family:  KaiTi;
+  box-shadow: 2px 4px 6px 2px rgba(0, 31, 24, 0.836);
+
+}
+

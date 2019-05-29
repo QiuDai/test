@@ -1,0 +1,341 @@
+/* 初始化 */
+* {
+  margin: 0;
+  padding: 0；;
+}
+a {
+  text-decoration: none;
+}
+li,
+ul {
+  list-style: none;
+}
+/* 全局布局 */
+body {
+  width: 100%;
+  height: 100%;
+  font-family: PingFang SC, "Hiragino Sans GB", "Source Han Sans CN", Roboto,
+    "Microsoft Yahei", sans-serif;
+  font-weight: 400;
+  color: rgba(2, 0, 0, 0.6);
+  text-rendering: optimizeLegibility;
+}
+.wrapper {
+  background-image: url(../images/flower.jpg);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  z-index: -999;
+}
+.clear{
+  width:100%;
+  height:30px;
+  }
+
+/* 导航 */
+.innav {
+  width: 400px;
+  padding-right: 50px;
+  float: right;
+}
+.innav:hover .navbar {
+  display: block;
+}
+/* 导航图标 */
+.bt-nav {
+  display: block;
+  position: absolute;
+  z-index: 999;
+  top: 2em;
+  right: 3em;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+.bt-nav .line {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  width: 30px;
+  margin-left: -15px;
+  height: 1px;
+  background: rgba(255, 255, 255, 1);
+}
+.bt-nav .line1 {
+  top: 17px;
+}
+.bt-nav .line3 {
+  top: 27px;
+}
+.clear{
+  height:80px;
+}
+
+/* 导航框 */
+.navbar {
+  display: none;
+  float: right;
+  margin-top: 40px;
+  padding-right: 90px;
+}
+nav {
+  float: left;
+}
+.menus {
+  float: left;
+  display: block;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.menus li {
+  color: #fff;
+  float: left;
+  margin: 0;
+  position: relative;
+}
+.menus li a {
+  color: #fff;
+  padding: 0 10px 40px;
+  font-weight: bold;
+}
+.menus li a:hover {
+  color: #bebbaa;
+}
+
+/* 页眉 */
+header {
+  position: relative;
+  z-index: 2;
+  display: block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+}
+.title {
+  text-align: center !important;
+  position: sticky;
+  display: inline-block;
+  z-index: 3;
+  padding-top: 110px;
+  color: #fff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.2s;
+}
+.qiu-logo {
+  display: inline-block;
+  width: 100px;
+  border-radius: 50%;
+}
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+.blog-description {
+  text-transform: none;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: fantasy;
+}
+
+.finalheader {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.decor{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; 
+}
+.bottom {
+  bottom: -1px; 
+}
+.shanxing {
+  transform: translateY(0%);
+  opacity: 1;
+  transition-delay: 1s;
+  transition-duration: 1s;
+  transition-property: all;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+/* 主体 */
+.main {
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+.container {
+  position: relative;
+  background: #fff;
+  padding: 60px 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+.postlist {
+  opacity: 1;
+  transform: translate(0);
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto 120px;
+}
+.review {
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 1px 3px rgba(249, 249, 249, 0.08),
+    0 0 0 1px rgba(26, 53, 71, 0.04), 0 1px 1px rgba(26, 53, 71, 0.06);
+}
+.post-container {
+  background: white;
+  margin-top: 0;
+  z-index: 2;
+  padding: 1.3rem 1.3rem 2rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.entry-content {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.75;
+  hyphens: auto;
+  padding-bottom: 1.3rem;
+}
+.gaz-btn {
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  color: white !important;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.2s;
+  display: inline-block;
+  background: #85a088;
+  float: right;
+}
+.review-item {
+  position: relative;
+  overflow: visible;
+  margin-top: 1.5em;
+  border-radius: 6px 6px 0 0;
+  min-height: 200px;
+}
+.review-bg-wrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 6px 6px 0 0;
+  z-index: 0;
+}
+.bg-blur {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-size: cover;
+  border-radius: 6px;
+  filter: blur(5px);
+  transform: scale(1.2);
+  object-fit: cover;
+  pointer-events: none;
+}
+.row-wrpp {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row-left {
+  width: 25%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.postlist a {
+  color: inherit;
+}
+.review-item-img {
+  position: absolute;
+  width: 130px;
+  height: 190px;
+  top: -50px;
+  left: 25px;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: top center;
+}
+.row-right {
+  width: 75%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 0;
+  padding-left: 0;
+  align-self: center;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.review-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.review-item-creator {
+  font-size: 1em;
+  font-weight: normal;
+  padding-top: 10px;
+}
+/* 页脚 */
+footer {
+	padding: 120px 0 60px;
+	position: relative;
+	width: 100%;
+	display: block;
+  z-index: 2;
+  color: #fff;
+}
+.qqtu{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width:100px;
+}
+.cr {
+	text-transform: none;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
